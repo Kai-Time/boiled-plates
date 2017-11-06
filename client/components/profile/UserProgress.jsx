@@ -6,17 +6,17 @@ import CountProgress from './CountProgress'
 
 class UserProgress extends React.Component {
   render () {
+    const recipeScore = this.props.recipes.length * 3
     const progressBar = {
-      tau: 3 * Math.PI,
+      tau: 2 * Math.PI,
       radius: 150,
       padding: -1,
-      amount: 65, // Adjust me
+      amount: recipeScore, // Adjust me
       total: 100 // Adjust me
     }
 
     progressBar.boxSize = (progressBar.radius + progressBar.padding) * 2
     progressBar.ratio = progressBar.amount / progressBar.total
-    const recipeScore = this.props.recipes.length * 3
     console.log('here it is; ', this.props.recipes)
     console.log('here it is; ', recipeScore)
     return (
