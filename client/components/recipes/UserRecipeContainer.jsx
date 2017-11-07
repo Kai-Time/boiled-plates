@@ -7,9 +7,9 @@ function UserRecipeContainer(props) {
   const recipes = props.recipes
   return (
     <div className='recipe'>
-      {recipes.map(recipe => {
+      {recipes.map((recipe, i) => {
         return (
-          <Recipe recipe={recipe} />
+          <Recipe key={i} recipe={recipe} />
         )
       })}
     </div>
