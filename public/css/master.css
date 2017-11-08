@@ -218,3 +218,10 @@ footer{
   color: white;
   height: 50px;
 }
+
+/* ======== ABOUT US ======= */
+
+#imageSrc{
+  width: 30px;
+  height: 30px;
+}

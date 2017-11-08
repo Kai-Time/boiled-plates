@@ -12,6 +12,7 @@ import RecipeList from './recipes/RecipeList'
 import SingleRecipe from './recipes/SingleRecipe'
 import RecipeForm from './recipes/RecipeForm'
 import RemoteRecipe from './recipes/RemoteRecipe'
+import AboutUs from './AboutUs'
 // import Star from './star/Star'
 
 // import UserProgress from './profile/UserProgress.jsx'
