@@ -25,12 +25,12 @@ class Login extends React.Component {
   }
   render () {
     return (
-      <form className="Login" onSubmit={this.submit}>
+      <form onSubmit={this.submit} className='login-form'>
         <label>Username:
-          <input type="text" name="username" onChange={this.updateDetails} />
+          <input type="text" name="username" onChange={this.updateDetails} className='input-login'/>
         </label><br />
         <label>Password:
-          <input type="password" name="password" onChange={this.updateDetails} />
+          <input type="password" name="password" onChange={this.updateDetails} className='input-login'/>
         </label><br />
         <input type="submit" />
       </form>

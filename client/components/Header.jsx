@@ -8,11 +8,11 @@ import SkyLight from 'react-skylight'
 
 class Header extends React.Component {
   render () {
-    const signUpForm = {
+    const logInForm = {
       backgroundColor: '#2e7a84',
       color: '#ffffff',
-      width: '45%',
-      height: '300px'
+      width: '50%',
+      height: '200px'
     }
 
     const {auth, dispatch} = this.props
@@ -21,30 +21,30 @@ class Header extends React.Component {
       <div>
         <header>
           <Link to='/'>
-            <h1>Kai Time!</h1> 
+            <h1>Kai Time!</h1>
             {/* Your healthy vegetarian diet begins here. */}
           </Link>
 
-          <div className='Nav'>
-            {this.props.auth.isAuthenticated
-              ? <div>
-                <p>Hi, {auth.user.username}</p><Link to={`/profile`}>Profile</Link>
-                <button onClick={() => dispatch(logoutUser())}>Logout</button>
-              </div>
-              : <div>
+          {this.props.auth.isAuthenticated
+            ? <div>
+              <h4>Hi, {auth.user.username}</h4>
+              <Link to={`/profile`}>Profile</Link>
+              <button className='login' onClick={() => dispatch(logoutUser())}>Logout</button>
+            </div>
+            : <div>
 
-                {/* <span className='login'><button onClick={() => this.signupForm.show()}>SIGN UP</button></span>
+              {/* <span className='login'><button onClick={() => this.signupForm.show()}>SIGN UP</button></span>
                 <SkyLight dialogStyles={signUpForm} hideOnOverlayClicked ref={ref => (this.signupForm = ref)} title="Sign Me Up">
                   <Register />
                 </SkyLight> */}
 
-                <span className='login'><button className='login' onClick={() => this.loginForm.show()}>LOG IN</button></span>
-                <SkyLight dialogStyles={signUpForm} hideOnOverlayClicked ref={ref => (this.loginForm = ref)} title="Log Me In">
-                  <Login />
-                </SkyLight>
-              </div>
-            }
-          </div>
+              <button className='login' onClick={() => this.loginForm.show()}>Log In</button>
+              <SkyLight dialogStyles={logInForm} hideOnOverlayClicked ref={ref => (this.loginForm = ref)} title="Log In">
+                <Login />
+              </SkyLight>
+            </div>
+          }
+
         </header>
       </div>
     )

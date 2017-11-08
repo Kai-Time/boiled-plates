@@ -37,7 +37,7 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
 } 
 
 h1 {
@@ -70,10 +70,36 @@ h3 {
   flex-flow: column;
   /* justify-content: flex-end; */
 }
+h4 {
+  font-size: 20px;
+  font-family: 'Oleo Script', cursive;
+  font-weight: normal;
+   display: flex;
+  flex-flow: column;
+  /* justify-content: flex-end; */
+}
 
 .login {
+  border: none;
+  border-radius: 5px;
+  width: 65px;
+  height: 35px;
   margin: 10px;
   font-weight: bold;
+  background-color: rgba(46, 139, 86, 0.77);
+  color: white;
+}
+
+.login-form {
+  text-align: center;
+}
+
+.input-login {
+  margin: 5px;
+  width: 30%;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid #BCD100;
 }
 
 .banner {
@@ -144,8 +170,10 @@ h3 {
 
 .input-bar {
   width: 80%;
-  height: 30px;
+  height: 40px;
   text-align: center;
+  border-radius: 10px;
+  border: 2px solid #BCD100;
 }
 
 .recipe-tickets {
