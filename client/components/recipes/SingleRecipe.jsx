@@ -18,21 +18,28 @@ class SingleRecipe extends React.Component {
     const { recipe } = this.props
     return (
       <div>
-        <div className='banner'>
-          <img src={recipe.image} alt=''></img>
-        </div>
         <h2>{recipe.name}</h2>
-        <div className='sidebar'>
-          {recipe.ingredients}
+        <div className='empty-banner'>
+          {/* <div className='recipe-holder'> */}
+          <div className='instructions'>
+          <img src={recipe.image} className='single-recipe-img' alt='food-img'></img>
+            <div className='title-box'>Instructions:</div> <br/>
+            {recipe.instructions}
+          </div>
+          <div className='ingredients'>
+            <div className='title-box'>Ingredients:</div><br/>
+            {recipe.ingredients}
+          </div>
+          {/* </div> */}
+          {/* <div className='commment-section'> */}
         </div>
-        <div className='sidebar-2'>
-          {recipe.instructions}
-        </div>
-        <div className='commment-section'>
+        <div className='flex-container-center'>
           <AddComment recipeId={recipe.id}/>
-        </div>
-        <div className='comment-container'>
-          <CommmentContainer recipeId={recipe.id} />
+          {/* <div className='comment-container'> */}
+          <div className='comment-area'>
+            <CommmentContainer recipeId={recipe.id} />
+          </div>
+          {/* </div> */}
         </div>
       </div>
 

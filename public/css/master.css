@@ -42,9 +42,10 @@ header {
 
 h1 {
   height: 30px;
-  font-size: 48px;
+  font-size: 60px;
   font-family: 'Oleo Script', cursive;
   font-weight: bold;
+  color: #0F0F0F
 } 
 
 h2 {
@@ -52,7 +53,7 @@ h2 {
   font-size: 32px;
   font-family: 'Oleo Script', cursive;
   font-weight: bold;
-  /* background-color: white; */
+  background-color: white;
 
   display: flex;
   flex-flow: column;
@@ -111,9 +112,21 @@ h4 {
   background: white;
   
   display: flex;
+  padding: 20px;
   flex-flow: row;
   justify-content: space-around;
   align-content: center;
+}
+.empty-banner {
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+  background: white;
+  
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  /* align-content: center; */
 }
 
 .recipe-banner {
@@ -152,6 +165,15 @@ h4 {
   flex-flow: row wrap;
   justify-content: space-between;
 }
+.flex-container-center {
+  padding: 15px;
+  border: 1px solid black; 
+  /* Comment border out when need to */
+  display: flex;
+  flex-flow: column;
+  /* justify-content: center; */
+  /* align-content: center; */
+}
 
 /* =========RECIPE RELATED========= */
 
@@ -177,6 +199,28 @@ h4 {
   border: 2px solid #BCD100;
 }
 
+.input-comment {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  height: 100px;
+  text-align: left;
+  padding: 15px;
+}
+
+/* .comment-form {
+  text-align: left;
+  margin: auto;
+} */
+
+.comment-area {
+  width: 550px;
+  margin-top: 20px auto;
+  text-align: left;
+  border-top: 1px solid black;
+}
+
+
 .recipe-tickets {
   margin-top: 10px;
   padding: 10px 0px 0px 0px;
@@ -191,6 +235,12 @@ h4 {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+#single-recipe-img {
+  /* width: 70%;  */
+  height: 550px;
+  /* object-fit: cover; */
 }
 
 .title-box {
@@ -256,6 +306,26 @@ h4 {
   align-content: center;
 }
 
+.ingredients {
+  margin: 20px;
+  text-align: left;
+  font-size: 20px;
+  padding: 20px;
+  /* border: 1px solid black;  */
+  width: 150px;
+}
+
+.instructions {
+  margin: 20px;
+  text-align: left;
+  font-size: 18px;
+  padding: 20px;
+  border-right: 1px solid black; 
+  width: 350px;
+}
+
+
+
 /* ==========Challenge========== */
 
 .link-challenge {
@@ -306,9 +376,9 @@ footer{
 
 /* ======== ABOUT US ======= */
 
-#imageSrc{
+/* #imageSrc{
   width: 30px;
   height: 30px;
 .selector-for-some-widget {
   box-sizing: content-box;
-}
+} */

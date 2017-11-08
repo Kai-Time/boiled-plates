@@ -17,15 +17,16 @@ class Profile extends React.Component {
     const {firstname, lastname, postValue, profile_image, recipes} = profile
     return (
       <div className='profile'>
-
-        <a className="top-button" href="#/profile" onClick={() => jump('.options')}>
-          <img className="top-button-icon" src="images/down.png"height='30px'width='30px' />
-          <span className="top-button-text"></span>
-        </a>
-
         <div className='side-bar'>
           <UserProgress score={postValue} image={profile_image} />
-          <div className='badgets'>{firstname} {lastname}</div>
+          <div className='flex-box'>
+            <p id='challenge'>Your Challenge Progress</p>
+            <div className='badgets'><p id='username'> Would you like to share your meal today? </p></div>
+            <form className=''>
+              <input type='text' name='comment' className='share-post'/>
+              <button>Share post</button>
+            </form>
+          </div>
         </div>
         <div className='post-container'>
           <div className='what-to-do'>
