@@ -13,6 +13,7 @@ import RecipeList from './recipes/RecipeList'
 import SingleRecipe from './recipes/SingleRecipe'
 import RecipeForm from './recipes/RecipeForm'
 import RemoteRecipe from './recipes/RemoteRecipe'
+import AboutUs from './AboutUs'
 // import Star from './star/Star'
 
 // import UserProgress from './profile/UserProgress.jsx'
@@ -29,6 +30,7 @@ const App = () => (
       <Route exact path="/recipes/:id" component={SingleRecipe} />
       <Route path='/remoterecipes' component={RemoteRecipe} />
       <Route path='/profile' component={Profile} />
+      <Route path='/aboutus' component={AboutUs} />
       {/* <Route path='./star' component={Star} /> */}
       <Route path='/profile/:id' component={SingleProfile} />
       <Route path='/login' component={Login} />
