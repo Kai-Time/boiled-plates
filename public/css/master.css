@@ -1,13 +1,18 @@
-/* html {
-  
+/* * {
+  margin: 0;
+  padding: 0;
 } */
+
+html {
+  min-height: 100%;
+}
 
 .app {
   margin: 0px;
   padding: 0px;
   /* position: relative; */
   width: 100%;
-  /* min-height: 100% */
+  height: 100%
 }
 
 a {
@@ -20,12 +25,13 @@ a:hover {
 }
 
 body {
-  /* position: relative; */
+  position: relative;
   margin: 0 0 50px;
   background-color: #E9E9E9;
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
   /* width: 930px; */
+  height: 100%;
 }
 
 header {
@@ -37,14 +43,15 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
 } 
 
 h1 {
   height: 30px;
-  font-size: 48px;
+  font-size: 60px;
   font-family: 'Oleo Script', cursive;
   font-weight: bold;
+  color: #0F0F0F
 } 
 
 h2 {
@@ -71,9 +78,46 @@ h3 {
   /* justify-content: flex-end; */
 }
 
+h4 {
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: 'Oleo Script', cursive;
+  font-weight: normal;
+   display: flex;
+  flex-flow: column;
+  /* justify-content: flex-end; */
+}
+
 .login {
+  border: none;
+  border-radius: 5px;
+  width: 65px;
+  height: 25px;
   margin: 10px;
   font-weight: bold;
+  background-color: rgba(46, 139, 86, 0.77);
+  color: white;
+}
+
+.logged-in {
+  width: 450px;
+  /* border: 2px solid #BCD100; */
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.login-form {
+  text-align: center;
+}
+
+.input-login {
+  margin: 5px;
+  width: 30%;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid #BCD100;
 }
 
 .banner {
@@ -84,9 +128,21 @@ h3 {
   background: white;
   
   display: flex;
+  padding: 20px;
   flex-flow: row;
   justify-content: space-around;
   align-content: center;
+}
+.empty-banner {
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+  background: white;
+  
+  /* display: flex;
+  flex-flow: row;
+  justify-content: center; */
+  /* align-content: center; */
 }
 
 .recipe-banner {
@@ -126,6 +182,27 @@ h3 {
   justify-content: space-between;
 }
 
+.flex-container3 {
+  padding: 15px;
+  border: 1px solid black; 
+  /* width: 80%; */
+  /* Comment border out when need to */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.flex-container-center {
+  padding: 15px;
+  border: 1px solid black; 
+  /* Comment border out when need to */
+  display: flex;
+  flex-flow: column;
+  /* justify-content: center; */
+  /* align-content: center; */
+}
+
 /* =========RECIPE RELATED========= */
 
 .link-recipe {
@@ -144,9 +221,33 @@ h3 {
 
 .input-bar {
   width: 80%;
-  height: 30px;
+  height: 40px;
   text-align: center;
+  border-radius: 10px;
+  border: 2px solid #BCD100;
 }
+
+.input-comment {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  height: 100px;
+  text-align: left;
+  padding: 15px;
+}
+
+/* .comment-form {
+  text-align: left;
+  margin: auto;
+} */
+
+.comment-area {
+  width: 100%;
+  margin-top: 20px auto;
+  text-align: left;
+  border-top: 1px solid black;
+}
+
 
 .recipe-tickets {
   margin-top: 10px;
@@ -162,6 +263,12 @@ h3 {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+#single-recipe-img {
+  /* width: 70%;  */
+  height: 550px;
+  /* object-fit: cover; */
 }
 
 .title-box {
@@ -227,6 +334,27 @@ h3 {
   align-content: center;
 }
 
+.ingredients {
+  /* margin: 20px; */
+  text-align: left;
+  font-size: 20px;
+  padding: 20px;
+  /* border: 1px solid black;  */
+  width: 200px;
+  background-color: rosybrown;
+}
+
+.instructions {
+  /* margin: 20px; */
+  text-align: left;
+  font-size: 18px;
+  padding: 20px;
+  border-right: 1px solid black; 
+  width: 500px;
+}
+
+
+
 /* ==========Challenge========== */
 
 .link-challenge {
@@ -262,7 +390,7 @@ h3 {
 footer{
   width: 100%;
   bottom: 0;
-  position: absolute;
+  /* position: fixed; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,3 +401,13 @@ footer{
   color: white;
   height: 50px;
 }
+
+
+/* ======== ABOUT US ======= */
+
+/* #imageSrc{
+  width: 30px;
+  height: 30px;
+.selector-for-some-widget {
+  box-sizing: content-box;
+} */

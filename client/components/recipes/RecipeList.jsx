@@ -52,7 +52,6 @@ class RecipeList extends React.Component {
     return (
       <div>
         <div className='recipe-banner'>
-          
         </div>
 
         <h3>Find a recipe</h3>
@@ -70,7 +69,7 @@ class RecipeList extends React.Component {
           })}
         </div>
 
-        <h3>Kia Time's Top 5!</h3>
+        <h3>Kai Time's Top 5 user recipes!</h3>
         <div className='flex-container'>
           {recipes.map((recipe, i) => {
             return (
@@ -78,6 +77,7 @@ class RecipeList extends React.Component {
             )
           })}
         </div>
+        <button id='search-button'>More</button>
       </div>
     )
   }

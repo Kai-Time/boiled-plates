@@ -38,7 +38,7 @@ class RecipeForm extends React.Component {
   render () {
     return (
       <div className='recipe-form'>
-        <Link to='/profile'>Back to profile</Link>
+        {/* <Link to='/profile'>Back to profile</Link> */}
         <form className='form' onSubmit={this.handleSubmit}>
           <label>
               Name:
@@ -51,6 +51,8 @@ class RecipeForm extends React.Component {
           <label>
               Ingredients:
             <input type='text' name='ingredients' placeholder='Ingredients required' onChange={this.handleChange} />
+            <input type='text' name='ingredients' placeholder='Ingredients required' onChange={this.handleChange} />
+            
           </label>
           <label>
               Instructions:

@@ -2,6 +2,7 @@ import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
 import RecipesHome from './RecipesHome'
 import Header from './Header'
+// import Carousel from './Carousel'
 import Banner from './Banner'
 import Profile from './profile/Profile'
 import SingleProfile from './profile/SingleProfile'
@@ -12,21 +13,26 @@ import RecipeList from './recipes/RecipeList'
 import SingleRecipe from './recipes/SingleRecipe'
 import RecipeForm from './recipes/RecipeForm'
 import RemoteRecipe from './recipes/RemoteRecipe'
+import AboutUs from './AboutUs'
 // import Star from './star/Star'
 
 // import UserProgress from './profile/UserProgress.jsx'
 
-// import Footer from './Footer'
+import Footer from './Footer'
 
-const App = () => (
+const App = () => {
+
+  return (
   <Router>
     <div className='app'>
       <Route path='/' component={Header} />
+      {/* <Route exact path='/' component={Carousel} /> */}
       <Route exact path='/' component={Banner} />
       <Route exact path="/recipes" component={RecipeList} />
       <Route exact path="/recipes/:id" component={SingleRecipe} />
       <Route path='/remoterecipes' component={RemoteRecipe} />
       <Route path='/profile' component={Profile} />
+      <Route path='/aboutus' component={AboutUs} />
       {/* <Route path='./star' component={Star} /> */}
       <Route path='/profile/:id' component={SingleProfile} />
       <Route path='/login' component={Login} />
@@ -37,9 +43,9 @@ const App = () => (
         <Route exact path='/' component={Challenge} />
         {/* <Route path='/testchart' component={UserProgress} /> */}
       </div>
-      {/* <Footer /> */}
+      {<Route path='/' component={Footer} />}
     </div>
   </Router>
-)
+)}
 
 export default App
