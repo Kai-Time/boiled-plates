@@ -218,3 +218,7 @@ footer{
   color: white;
   height: 50px;
 }
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
