@@ -27,6 +27,7 @@ const App = () => (
       <Route exact path="/recipes/:id" component={SingleRecipe} />
       <Route path='/remoterecipes' component={RemoteRecipe} />
       <Route path='/profile' component={Profile} />
+      <Route path='/aboutus' component={AboutUs} />
       {/* <Route path='./star' component={Star} /> */}
       <Route path='/profile/:id' component={SingleProfile} />
       <Route path='/login' component={Login} />
