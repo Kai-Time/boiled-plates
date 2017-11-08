@@ -11,7 +11,7 @@ const Recipe = (props) => {
     <div className=' '>
       <div className='user-recipe-title'>{props.recipe.name}</div>
       <img src={props.recipe.image} alt='recipe-image' width='100%'/>
-      <Link to={`/recipes/${props.recipe.id}`}>
+      <Link to={`/recipes/${props.recipe.id || props.recipe.recipeId}`}>
         <div className='check-it-out'>Checkout "username's" recipe</div>
       </Link>
 
