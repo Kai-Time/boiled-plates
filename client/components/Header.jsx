@@ -28,7 +28,7 @@ class Header extends React.Component {
             {this.props.auth.isAuthenticated
               ? <div>
                 <p>Hi, {auth.user.username}</p><Link to={`/profile`}>Profile</Link>
-                <button onClick={() => dispatch(logoutUser())}>Logout</button>
+                <button className="button is-focused"onClick={() => dispatch(logoutUser())}>Logout</button>
               </div>
               : <div>
 
@@ -37,7 +37,13 @@ class Header extends React.Component {
                   <Register />
                 </SkyLight> */}
 
-                <span className='login'><button className='login' onClick={() => this.loginForm.show()}>LOG IN</button></span>
+                <span className='aboutus'><Link to={'/aboutus'}>
+                  <a className="button is-focused">About us</a></Link>
+                  </span>
+
+               
+
+                <span className='login'><button className="button is-focused" onClick={() => this.loginForm.show()}>Log In</button></span>
                 <SkyLight dialogStyles={signUpForm} hideOnOverlayClicked ref={ref => (this.loginForm = ref)} title="Log Me In">
                   <Login />
                 </SkyLight>
