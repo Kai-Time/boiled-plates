@@ -79,7 +79,10 @@ h3 {
 }
 
 h4 {
+<<<<<<< HEAD
   margin-right: 10px;
+=======
+>>>>>>> 98c1961971b71598ef01931df870106f7832c22a
   font-size: 20px;
   font-family: 'Oleo Script', cursive;
   font-weight: normal;
@@ -92,13 +95,18 @@ h4 {
   border: none;
   border-radius: 5px;
   width: 65px;
+<<<<<<< HEAD
   height: 25px;
+=======
+  height: 35px;
+>>>>>>> 98c1961971b71598ef01931df870106f7832c22a
   margin: 10px;
   font-weight: bold;
   background-color: rgba(46, 139, 86, 0.77);
   color: white;
 }
 
+<<<<<<< HEAD
 .logged-in {
   width: 450px;
   /* border: 2px solid #BCD100; */
@@ -108,6 +116,8 @@ h4 {
   align-items: baseline;
 }
 
+=======
+>>>>>>> 98c1961971b71598ef01931df870106f7832c22a
 .login-form {
   text-align: center;
 }
@@ -139,9 +149,15 @@ h4 {
   width: 100%;
   background: white;
   
+<<<<<<< HEAD
   /* display: flex;
   flex-flow: row;
   justify-content: center; */
+=======
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+>>>>>>> 98c1961971b71598ef01931df870106f7832c22a
   /* align-content: center; */
 }
 
@@ -180,6 +196,15 @@ h4 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+}
+.flex-container-center {
+  padding: 15px;
+  border: 1px solid black; 
+  /* Comment border out when need to */
+  display: flex;
+  flex-flow: column;
+  /* justify-content: center; */
+  /* align-content: center; */
 }
 
 .flex-container3 {
@@ -242,7 +267,11 @@ h4 {
 } */
 
 .comment-area {
+<<<<<<< HEAD
   width: 100%;
+=======
+  width: 550px;
+>>>>>>> 98c1961971b71598ef01931df870106f7832c22a
   margin-top: 20px auto;
   text-align: left;
   border-top: 1px solid black;
