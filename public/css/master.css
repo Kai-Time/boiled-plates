@@ -219,6 +219,12 @@ footer{
   height: 50px;
 }
 
+
+/* ======== ABOUT US ======= */
+
+#imageSrc{
+  width: 30px;
+  height: 30px;
 .selector-for-some-widget {
   box-sizing: content-box;
 }

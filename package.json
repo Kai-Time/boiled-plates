@@ -55,6 +55,7 @@
     "knex": "^0.13.0",
     "pg": "^6.2.3",
     "react": "^15.5.4",
+    "react-bootstrap-carousel": "^2.2.0",
     "react-dom": "^15.5.4",
     "react-images-upload": "^1.1.1",
     "react-redux": "^5.0.5",
