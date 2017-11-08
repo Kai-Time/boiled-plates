@@ -7,7 +7,6 @@ import Recipe from './Recipe'
 import {searchRecipes} from '../../actions/remoteRecipes'
 import {searchRecipeInfo} from '../../client-api/'
 import RemoteRecipe from './RemoteRecipe'
-// import ImageSlide from '../ImageSlide'
 
 class RecipeList extends React.Component {
   constructor (props) {
@@ -53,7 +52,7 @@ class RecipeList extends React.Component {
     return (
       <div>
         <div className='recipe-banner'>
-          {/* <ImageSlide /> */}
+          Photo slide show?
         </div>
 
         <h3>Find a recipe</h3>
