@@ -25876,25 +25876,7 @@ var Banner = function (_React$Component) {
             //   { images.map((image, key) => <div key={key}><img src={image} /></div>) }
             // </Slider>
 
-            return _react2.default.createElement(
-                'div',
-                { className: 'banner' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'quotes' },
-                    'Why?'
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'quotes' },
-                    'How?'
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'quotes' },
-                    'What?'
-                )
-            );
+            return _react2.default.createElement('div', { className: 'banner' });
         }
     }]);
 
@@ -26110,7 +26092,7 @@ var Header = function (_React$Component) {
               _reactSkylight2.default,
               { dialogStyles: logInForm, hideOnOverlayClicked: true, ref: function ref(_ref) {
                   return _this2.loginForm = _ref;
-                }, title: 'Log In' },
+                } },
               _react2.default.createElement(_Login2.default, null)
             )
           )

@@ -79,10 +79,7 @@ h3 {
 }
 
 h4 {
-<<<<<<< HEAD
   margin-right: 10px;
-=======
->>>>>>> 98c1961971b71598ef01931df870106f7832c22a
   font-size: 20px;
   font-family: 'Oleo Script', cursive;
   font-weight: normal;
@@ -95,18 +92,13 @@ h4 {
   border: none;
   border-radius: 5px;
   width: 65px;
-<<<<<<< HEAD
-  height: 25px;
-=======
   height: 35px;
->>>>>>> 98c1961971b71598ef01931df870106f7832c22a
   margin: 10px;
   font-weight: bold;
   background-color: rgba(46, 139, 86, 0.77);
   color: white;
 }
 
-<<<<<<< HEAD
 .logged-in {
   width: 450px;
   /* border: 2px solid #BCD100; */
@@ -116,8 +108,6 @@ h4 {
   align-items: baseline;
 }
 
-=======
->>>>>>> 98c1961971b71598ef01931df870106f7832c22a
 .login-form {
   text-align: center;
 }
@@ -135,7 +125,10 @@ h4 {
   padding: 20px;
   width: 100%;
   height: 350px;
-  background: white;
+  /* background: white; */
+  background-image: url('/images/userRecipes/haloumi.jpg');
+  background-size: cover;
+  background-position: center;
   
   display: flex;
   padding: 20px;
@@ -149,15 +142,9 @@ h4 {
   width: 100%;
   background: white;
   
-<<<<<<< HEAD
-  /* display: flex;
-  flex-flow: row;
-  justify-content: center; */
-=======
   display: flex;
   flex-flow: row;
   justify-content: center;
->>>>>>> 98c1961971b71598ef01931df870106f7832c22a
   /* align-content: center; */
 }
 

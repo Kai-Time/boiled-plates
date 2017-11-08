@@ -21,7 +21,8 @@ class Banner extends React.Component {
     
     return (
       <div className='banner'>
-        <div className='quotes'>
+            {/* <img src='images/userRecipes/haloumi.jpg' alt='food-img' width='100%'/> */}
+        {/* <div className='quotes'>
             Why?
         </div>
         <div className='quotes'>
@@ -29,7 +30,7 @@ class Banner extends React.Component {
         </div>
         <div className='quotes'>
             What?
-        </div>
+        </div> */}
       </div>
       
   )

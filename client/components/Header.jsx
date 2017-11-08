@@ -33,7 +33,7 @@ class Header extends React.Component {
             </div>
             : <div>
               <span><button className='login' onClick={() => this.loginForm.show()}>Log In</button></span>
-              <SkyLight dialogStyles={logInForm} hideOnOverlayClicked ref={ref => (this.loginForm = ref)} title="Log In">
+              <SkyLight dialogStyles={logInForm} hideOnOverlayClicked ref={ref => (this.loginForm = ref)} >
                 <Login />
               </SkyLight>
 
