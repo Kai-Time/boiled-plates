@@ -7,7 +7,7 @@
   padding: 0px;
   /* position: relative; */
   width: 100%;
-  min-height: 100%
+  /* min-height: 100% */
 }
 
 a {
@@ -22,16 +22,17 @@ a:hover {
 body {
   /* position: relative; */
   margin: 0 0 50px;
-  background-color: #E0E0E0;
+  background-color: #E9E9E9;
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
+  /* width: 930px; */
 }
 
 header {
   margin: auto;
   padding: 5px;
   /* background-color: white; */
-  width: 80%;
+  width: 65%;
 
   display: flex;
   flex-flow: row wrap;
@@ -45,6 +46,30 @@ h1 {
   font-family: 'Oleo Script', cursive;
   font-weight: bold;
 } 
+
+h2 {
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-family: 'Oleo Script', cursive;
+  font-weight: bold;
+  background-color: white;
+
+  display: flex;
+  flex-flow: column;
+  /* justify-content: flex-end; */
+}
+
+h3 {
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-family: 'Oleo Script', cursive;
+  font-weight: bold;
+  /* background-color: white; */
+
+  display: flex;
+  flex-flow: column;
+  /* justify-content: flex-end; */
+}
 
 .login {
   margin: 10px;
@@ -68,10 +93,11 @@ h1 {
   margin: auto;
   padding: 20px;
   width: 100%;
-  height: 200px;
+  height: 250px;
   /* background: white; */
-  background-image: url('../images/placeholder.jpg');
-  background-size: contain; 
+  background-image: url('../images/recipe_page_banner.jpg');
+  background-size: 100%; 
+  background-position: center;
 }
 
 .quotes {
@@ -85,7 +111,7 @@ h1 {
 /* ==========FLEX CONTAINER========== */
 .flex-container {
   padding: 15px;
-  border: 1px solid black; 
+  /* border: 1px solid black;  */
   /* Comment border out when need to */
   display: flex;
   flex-flow: row wrap;
@@ -105,11 +131,12 @@ h1 {
 .link-recipe {
   display: flex;
   flex-flow: column;
-  /* justify-content: flex-end; */
+  justify-content: flex-end;
   margin-top: 15px;
   width: 650px;
-  height: 300px;
+  height: 350px;
   /* border: 1px solid black; */
+  border-top: 10px solid #288368;
   background-color: #FFFFFF;
   background-image: url('../images/placeholder.jpg');
   background-size: cover;
@@ -119,63 +146,85 @@ h1 {
   width: 80%;
   height: 30px;
   text-align: center;
-
 }
 
 .recipe-tickets {
-  /* padding: 0px 10px 0 10px; */
-  border: 1px solid black;
+  margin-top: 10px;
+  padding: 10px 0px 0px 0px;
+  border: 3px solid #BDCA00;
+  border-top: 6px solid #BDCA00;
   /* Comment border out when need to */
   width: 300px;
   /* height: 200px; */
 }
 
-.title-box {
-  padding: 10px;
-  height: 30px;
-  padding: 0 0 0 10px;
-  /* border: 1px solid black; */
-  font-weight: bold;
-  font-size: 18px;
-  text-align: center;
-  background-color: white;
+.recipe-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
+.title-box {
+  /* padding: 10px; */
+  height: 30px;
+  /* padding: 0 0 0 10px; */
+  /* border: 1px solid black; */
+  font-weight: bold;
+  text-align: center;
+  }
+
+
+#search-button {
+  margin: 5px;
+  color: white;
+  border: none;
+  width: 80px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: seagreen;
+  
+}
 
 /* >>>>> #/recipes <<<<< */
 .user-recipe-title {
+  font-family: 'Nunito', sans-serif;
+
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  height: 50px;
-  padding: 0 0 0 10px;
+  height: 30px;
   /* border: 1px solid black; */
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 16px;
   text-align: center;
-  background-color: #007A3D;
-  background-color: white;
+  
 }
 
 .check-it-out {
-  padding: 10px;
-  height: 30px;
-  padding: 0 0 0 10px;
-  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  height: 50px;
   font-weight: bold;
-  font-size: 14px;
-  text-align: center;
-  background-color: #007A3D;
+  font-size: 15px;
+  color: white;
+  background-color: #898F13;
 }
 
 .recipe-description {
   /* bottom: 0; */
   position: relative;
-  height: 100px;
+  height: 50px;
+  color: white;
   background-color: #288368;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 /* ==========Challenge========== */
@@ -183,11 +232,12 @@ h1 {
 .link-challenge {
   display: flex;
   flex-flow: column;
-  /* justify-content: flex-end; */
+  justify-content: flex-end;
   margin-top: 15px;
   width: 650px;
-  height: 300px;
+  height: 350px;
   /* border: 1px solid black; */
+  border-top: 10px solid #288368;
   background-color: white;
   background-image: url('../images/challenge.jpg');
   background-size: cover;
@@ -195,10 +245,15 @@ h1 {
 
 .challenge-description {
   /* align-items: flex-start; */
-  height: 100px;
+  color: white;
+  height: 50px;
   background-color: #288368;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 

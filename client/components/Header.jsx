@@ -21,7 +21,8 @@ class Header extends React.Component {
       <div>
         <header>
           <Link to='/'>
-            <h1>Kai Time!</h1>
+            <h1>Kai Time!</h1> 
+            {/* Your healthy vegetarian diet begins here. */}
           </Link>
 
           <div className='Nav'>

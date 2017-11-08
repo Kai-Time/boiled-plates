@@ -8,12 +8,12 @@ import SingleRecipe from './SingleRecipe.jsx'
 
 const Recipe = (props) => {
   return (
-    <div className=' '>
+    <div className='recipe-tickets'>
       <div className='user-recipe-title'>{props.recipe.name}</div>
-      <img src={props.recipe.image} alt='recipe-image' width='100%'/>
-      <Link to={`/recipes/${props.recipe.id}`}>
-        <div className='check-it-out'>Checkout "username's" recipe</div>
-      </Link>
+      <img src={props.recipe.image} className='recipe-img' alt='recipe-image' />
+      
+      <Link to={`/recipes/${props.recipe.id}`}><div className='check-it-out'>Checkout "username's" recipe</div></Link>
+      
 
     </div>
   )
