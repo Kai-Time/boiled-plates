@@ -2,6 +2,7 @@ import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
 import RecipesHome from './RecipesHome'
 import Header from './Header'
+// import Carousel from './Carousel'
 import Banner from './Banner'
 import Profile from './profile/Profile'
 import SingleProfile from './profile/SingleProfile'
@@ -22,6 +23,7 @@ const App = () => (
   <Router>
     <div className='app'>
       <Route path='/' component={Header} />
+      {/* <Route exact path='/' component={Carousel} /> */}
       <Route exact path='/' component={Banner} />
       <Route exact path="/recipes" component={RecipeList} />
       <Route exact path="/recipes/:id" component={SingleRecipe} />

@@ -17,13 +17,16 @@ class SingleRecipe extends React.Component {
   render () {
     const { recipe } = this.props
     return (
-      <div className=''>
-        <div>
+      <div>
+        <div className='banner'>
           <img src={recipe.image} alt=''></img>
-          <hr />
-          <p>{recipe.name}</p>
-          <p>{recipe.ingredients}</p>
-          <p>{recipe.instructions}</p>
+        </div>
+        <h2>{recipe.name}</h2>
+        <div className='sidebar'>
+          {recipe.ingredients}
+        </div>
+        <div className='sidebar-2'>
+          {recipe.instructions}
         </div>
         <div className='commment-section'>
           <AddComment recipeId={recipe.id}/>
@@ -32,6 +35,7 @@ class SingleRecipe extends React.Component {
           <CommmentContainer recipeId={recipe.id} />
         </div>
       </div>
+
     )
   }
 }

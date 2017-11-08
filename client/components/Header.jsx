@@ -22,7 +22,7 @@ class Header extends React.Component {
         <header>
           <Link to='/'>
             <h1>Kai Time!</h1>
-            {/* Your healthy vegetarian diet begins here. */}
+            {/* <span>Your healthy vegetarian diet begins here.</span> */}
           </Link>
 
           {this.props.auth.isAuthenticated

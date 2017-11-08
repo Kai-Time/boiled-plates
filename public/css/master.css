@@ -52,7 +52,7 @@ h2 {
   font-size: 32px;
   font-family: 'Oleo Script', cursive;
   font-weight: bold;
-  background-color: white;
+  /* background-color: white; */
 
   display: flex;
   flex-flow: column;
@@ -70,6 +70,7 @@ h3 {
   flex-flow: column;
   /* justify-content: flex-end; */
 }
+
 h4 {
   font-size: 20px;
   font-family: 'Oleo Script', cursive;
@@ -300,4 +301,8 @@ footer{
   font-weight: bold;
   color: white;
   height: 50px;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
 }
