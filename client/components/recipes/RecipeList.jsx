@@ -52,13 +52,12 @@ class RecipeList extends React.Component {
     return (
       <div>
         <div className='recipe-banner'>
-          Photo slide show?
         </div>
 
         <h3>Find a recipe</h3>
         <form onSubmit={this.addToSearch}>
-          <input type='text' className='input-bar' placeholder="Search a recipe" value={this.state.searchIngredient} onChange={ this.handleOnChange}/>
-          <input type='submit' value='Search' />
+          <input type='text' className='input-bar' placeholder="Search a recipe" value={this.state.searchIngredient} onChange={ this.handleOnChange}/><br/>
+          <input type='submit' value='Search' id='search-button'/>
         </form>
         <div className='flex-container'>
           {remoteRecipes.map(({title, image, f2f}) => {
@@ -70,16 +69,15 @@ class RecipeList extends React.Component {
           })}
         </div>
 
-        <h3>User's recipe</h3>
+        <h3>Kai Time's Top 5 user recipes!</h3>
         <div className='flex-container'>
           {recipes.map((recipe, i) => {
             return (
-              <div className='recipe-tickets'>
-                <Recipe key={i} recipe={recipe} />
-              </div>
+              <Recipe key={i} recipe={recipe} />
             )
           })}
         </div>
+        <button id='search-button'>More</button>
       </div>
     )
   }

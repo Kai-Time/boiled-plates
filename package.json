@@ -57,6 +57,7 @@
     "react": "^15.5.4",
     "react-bootstrap-carousel": "^2.2.0",
     "react-dom": "^15.5.4",
+    "react-image-slider": "^0.1.0",
     "react-images-upload": "^1.1.1",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",

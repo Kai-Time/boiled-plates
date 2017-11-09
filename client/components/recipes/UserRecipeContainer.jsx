@@ -6,7 +6,7 @@ import Recipe from './Recipe'
 function UserRecipeContainer (props) {
   const recipes = props.recipes
   return (
-    <div className='recipe'>
+    <div className='posts'>
       {recipes.map(recipe => {
         return (
           <Recipe recipe={recipe} />

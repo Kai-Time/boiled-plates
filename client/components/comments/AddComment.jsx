@@ -33,10 +33,10 @@ class AddComment extends React.Component {
     return (
       <div className='comment-form'>
         <form className='form' onSubmit={this.handleSubmit}>
+          Leave your comments:<br/>
           <label>
-              Comments:
-            <input type='text' name='comment' placeholder='Comment' onChange={this.handleChange} />
-          </label>
+            <input type='text' name='comment' onChange={this.handleChange} className='input-comment'/>
+          </label><br/>
           <button type='submit'>submit</button>
         </form>
       </div>

@@ -16,7 +16,7 @@ class UserProgress extends React.Component {
   // }
 
   render () {
-    const scoreNumber = this.props.score * 6
+    const scoreNumber = this.props.score * 10
     // console.log(scoreNumber)
     const progressBar = {
       tau: 2 * Math.PI,

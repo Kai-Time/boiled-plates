@@ -8,17 +8,10 @@ import RecipeList from './recipes/RecipeList'
 const Recipes = ({recipes, dispatch}) => {
   return (
     <div className='link-recipe'>
-      <div className='title-box'>
-        Find recipes
-      </div>
-        <div className='recipe-description'>
-          <p id='recipe-d'>Add this, drain that, cook it up</p>
-        </div>
-      <div>
-        <Link to="/recipes">
-          Recipes
-        </Link>
-      </div>
+      <h2>Find recipes</h2>
+      <Link to="/recipes"><div className='recipe-description'>
+        <p id='recipe-d'>Checkout our collection of recipes! <b>&#9658;</b></p>
+      </div></Link>
     </div>
   )
 }

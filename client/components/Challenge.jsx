@@ -5,14 +5,10 @@ import { Link } from 'react-router-dom'
 const Challenge = () => {
   return (
     <div className='link-challenge'>
-      <div className='title-box'>
-        Be in the force!
-      </div>
-
-      <div className='challenge-description'>
-        <Link to='/register'><p>Join the challenge</p></Link>
-      </div>
-
+      <h2>Be in the force!</h2>
+      <Link to='/register'><div className='challenge-description'>
+        <p>Join the challenge <b>&#9658;</b></p>
+      </div></Link>
     </div>
 
   )

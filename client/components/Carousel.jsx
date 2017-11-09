@@ -13,13 +13,13 @@ const Carousel = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             {/* <Banner /> */}
-            {<img className="d-block w-100" src="http://www.body-in-balance.org/wp-content/uploads/2016/03/vegan-food-list.jpg" alt="First slide" />}
+            {<img className="d-block w-100" src="" alt="First slide" />}
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src="http://veganfoodpyramid.com/wp-content/themes/migration/images/Vegan-Food-Pyramid.jpg" alt="Second slide" />
+            <img className="d-block w-100" src="" alt="Second slide" />
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src="https://igx.4sqi.net/img/general/699x268/10500807_3ioyI-VwNtXgBm7Fb0fcgYqC8Wz5kcGSh55wmfDlFg4.jpg" alt="Third slide" />
+            <img className="d-block w-100" src="" alt="Third slide" />
           </div>
         </div>
         <a className="carousel-control-prev" href="/" role="button" data-slide="prev">
