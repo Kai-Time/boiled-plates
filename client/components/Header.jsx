@@ -36,7 +36,9 @@ class Header extends React.Component {
               <SkyLight dialogStyles={logInForm} hideOnOverlayClicked ref={ref => (this.loginForm = ref)} >
                 <Login />
               </SkyLight>
-
+              <span className='aboutus'><Link to={'/aboutus'}>
+                <a className="button is-focused">About us</a></Link>
+              </span>
             </div>
           }
 
