@@ -30,6 +30,7 @@ adding recipes
 tracking your progress through your profile and earning badges
 rating and commenting
 enabled authorisation and adding users
+using an external API to have access to 1000's of recipes and searching for recipes by ingredient
 
 Learning Objectives:
 
