@@ -1,7 +1,7 @@
 Final project
 Project name: Kai Time?!
 
-You'll find us online https://kaitime.herokuapp.com/#/
+You'll find us online https://kai-time.herokuapp.com/#/
 
 Our team is still working on this project.
 
